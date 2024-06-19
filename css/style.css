@@ -64,6 +64,29 @@ section {
     margin-bottom: 10px;
 }
 
+.product h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.product p {
+    margin-bottom: 10px;
+}
+
+.product button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.product button:hover {
+    background-color: #555;
+}
+
 footer {
     background-color: #333;
     color: #fff;
