@@ -87,3 +87,19 @@ footer {
     text-decoration: none;
 }
 
+/* Style pour le logo */
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #333;
+    height: 50px; /* Hauteur du logo */
+}
+
+.logo i {
+    margin-right: 10px; /* Espace entre l'icône et le texte */
+}
