@@ -1,140 +1,47 @@
-/* Reset de base */
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-/* Styles généraux */
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f0f0f0;
-}
-
-.container {
-    width: 90%;
-    margin: 0 auto;
-    max-width: 1200px;
-}
-
-header {
-    position: relative;
-    background-color: #333;
-    color: #fff;
-    padding: 10px 0;
-    text-align: center;
-}
-
 .overlay {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 30vh;
-    z-index: 100;
-    background: rgb(255, 255, 255);
-    background: linear-gradient(
-        0deg,
-        rgba(255, 255, 255, 1) 75%,
-        rgba(255, 255, 255, 0.9) 80%,
-        rgba(255, 255, 255, 0.25) 95%,
-        rgba(255, 255, 255, 0) 100%
-    );
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 30vh;
+  z-index: 100;
+  background: white;
+  background: linear-gradient(0deg, white 75%, rgba(255, 255, 255, 0.9) 80%, rgba(255, 255, 255, 0.25) 95%, rgba(255, 255, 255, 0) 100%);
 }
 
 .text {
-    font-family: "Yanone Kaffeesatz", sans-serif;
-    font-size: 72px;
-    display: flex;
-    position: absolute;
-    bottom: 20vh;
-    left: 50%;
-    transform: translateX(-50%);
-    user-select: none;
-    color: #333;
+  font-family: "Yanone Kaffeesatz";
+  font-size: 100px;
+  display: flex;
+  position: absolute;
+  bottom: 20vh;
+  left: 50%;
+  transform: translateX(-50%);
+  user-select: none;
 }
 
-.wrapper {
-    padding: 10px;
+.text .wrapper {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
 }
 
-.wrapper .letter {
-    transition: ease-out 1s;
-    transform: translateY(40%);
+.text .wrapper .letter {
+  transition: ease-out 1s;
+  transform: translateY(40%);
 }
 
-.wrapper .shadow {
-    transform: scale(1, -1);
-    color: #999;
-    transition: ease-in 5s, ease-out 5s;
+.text .wrapper .shadow {
+  transform: scale(1, -1);
+  color: #999;
+  transition: ease-in 5s, ease-out 5s;
 }
 
-.wrapper:hover .letter {
-    transform: translateY(-200%);
+.text .wrapper:hover .letter {
+  transform: translateY(-200%);
 }
 
-.wrapper:hover .shadow {
-    opacity: 0;
-    transform: translateY(200%);
-}
-
-nav ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 10px;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-}
-
-main {
-    padding: 20px 0;
-}
-
-section {
-    margin-bottom: 30px;
-}
-
-.product {
-    background-color: #fff;
-    padding: 15px;
-    margin-bottom: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
-
-.product img {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 10px;
-}
-
-footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
-}
-
-.footer-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.social-icons a {
-    color: #fff;
-    font-size: 20px;
-    margin-right: 10px;
-    text-decoration: none;
+.text .wrapper:hover .shadow {
+  opacity: 0;
+  transform: translateY(200%);
 }
