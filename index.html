@@ -3,110 +3,180 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon Site E-commerce</title>
-    <link rel="stylesheet" href="fanazine/css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <!-- Lien vers vos styles CSS et Font Awesome -->
+    <title>FaNa'Zine - Vêtements et Accessoires pour Femmes</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="https://example.com/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Font Awesome -->
 </head>
 <body>
     <header>
-        <div class="container">
-            <h1>Mon Site E-commerce</h1>
-            <nav>
-                <ul>
-                    <li><a href="#featured-products">Produits en vedette</a></li>
-                    <li><a href="#new-arrivals">Nouveautés</a></li>
-                    <li><a href="#promotions">Promotions</a></li>
-                    <li><a href="#best-sellers">Meilleures ventes</a></li>
-                    <li><a href="#about-us">À propos de nous</a></li>
-                    <!-- Ajoutez d'autres liens de navigation si nécessaire -->
-                </ul>
-            </nav>
-        </div>
+        <nav>
+            <ul>
+                <li><a href="#home"><i class="fas fa-home"></i> Accueil</a></li>
+                <li class="dropdown">
+                    <a href="#clothing"><i class="fas fa-tshirt"></i> Vêtements</a>
+                    <div class="dropdown-content">
+                        <a href="#robes-longues">Robes Longues</a>
+                        <a href="#abayas">Abayas</a>
+                        <a href="#jilbebs">Jilbebs</a>
+                        <a href="#voiles">Voiles</a>
+                    </div>
+                </li>
+                <li><a href="#accessories"><i class="fas fa-hat-cowboy"></i> Accessoires</a></li>
+                <li><a href="#jewelry"><i class="fas fa-gem"></i> Bijoux</a></li>
+                <li><a href="#cart"><i class="fas fa-shopping-cart"></i> Panier</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
-        <section id="featured-products">
-            <div class="container">
-                <h2>Produits en vedette</h2>
-                <div class="product">
-                    <h3>Produit 1</h3>
-                    <img src="https://www.cdiscount.com/pdt2/3/8/6/3/700x700/mp62157386/rw/chic-robe-femme-soiree-cocktail-sur-l-epaule-asyme.jpg">
-                    <p>Description du produit 1.</p>
-                    <p>Prix : 19,99 €</p>
+        <section id="home">
+            <h1>Bienvenue sur FaNa'Zine</h1>
+            <p>Découvrez notre sélection de vêtements, accessoires, bijoux et plus encore pour femmes.</p>
+        </section>
+
+        <section id="clothing">
+            <h2>Vêtements</h2>
+            <div class="product-category" id="robes-longues">
+                <h3>Robes Longues</h3>
+                <div class="product-grid">
+                    <div class="product">
+                        <img src="https://via.placeholder.com/200" alt="Robe Longue 1" width="200" height="200">
+                        <p>Robe Longue Élégante</p>
+                        <button class="add-to-cart" data-product-id="1">Ajouter au Panier</button>
+                    </div>
+                    <div class="product">
+                        <img src="https://via.placeholder.com/200" alt="Robe Longue 2" width="200" height="200">
+                        <p>Robe Longue Simple</p>
+                        <button class="add-to-cart" data-product-id="2">Ajouter au Panier</button>
+                    </div>
                 </div>
-                <div class="product">
-                    <h3>Produit 2</h3>
-                    <img src="">
-                    <p>Description du produit 2.</p>
-                    <p>Prix : 24,99 €</p>
+            </div>
+            <div class="product-category" id="abayas">
+                <h3>Abayas</h3>
+                <div class="product-grid">
+                    <div class="product">
+                        <img src="https://via.placeholder.com/200" alt="Abaya 1" width="200" height="200">
+                        <p>Abaya Classique</p>
+                        <button class="add-to-cart" data-product-id="3">Ajouter au Panier</button>
+                    </div>
+                    <div class="product">
+                        <img src="https://via.placeholder.com/200" alt="Abaya 2" width="200" height="200">
+                        <p>Abaya Moderne</p>
+                        <button class="add-to-cart" data-product-id="4">Ajouter au Panier</button>
+                    </div>
+                </div>
+            </div>
+            <div class="product-category" id="jilbebs">
+                <h3>Jilbebs</h3>
+                <div class="product-grid">
+                    <div class="product">
+                        <img src="https://via.placeholder.com/200" alt="Jilbeb 1" width="200" height="200">
+                        <p>Jilbeb Traditionnel</p>
+                        <button class="add-to-cart" data-product-id="5">Ajouter au Panier</button>
+                    </div>
+                    <div class="product">
+                        <img src="https://via.placeholder.com/200" alt="Jilbeb 2" width="200" height="200">
+                        <p>Jilbeb Contemporain</p>
+                        <button class="add-to-cart" data-product-id="6">Ajouter au Panier</button>
+                    </div>
+                </div>
+            </div>
+            <div class="product-category" id="voiles">
+                <h3>Voiles</h3>
+                <div class="product-grid">
+                    <div class="product">
+                        <img src="https://via.placeholder.com/200" alt="Voile 1" width="200" height="200">
+                        <p>Voile Élégant</p>
+                        <button class="add-to-cart" data-product-id="7">Ajouter au Panier</button>
+                    </div>
+                    <div class="product">
+                        <img src="https://via.placeholder.com/200" alt="Voile 2" width="200" height="200">
+                        <p>Voile Simple</p>
+                        <button class="add-to-cart" data-product-id="8">Ajouter au Panier</button>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section id="new-arrivals">
-            <div class="container">
-                <h2>Nouveautés</h2>
-                <div class="product">
-                    <h3>Nouveau produit</h3>
-                    <img src="">
-                    <p>Description du nouveau produit.</p>
-                    <p>Prix : 29,99 €</p>
+        <section id="accessories">
+            <h2>Accessoires</h2>
+            <div class="product-category">
+                <h3>Sacs</h3>
+                <div class="product-grid">
+                    <div class="product">
+                        <img src="https://via.placeholder.com/200" alt="Sac 1" width="200" height="200">
+                        <p>Sac à Main</p>
+                        <button class="add-to-cart" data-product-id="9">Ajouter au Panier</button>
+                    </div>
+                    <div class="product">
+                        <img src="https://via.placeholder.com/200" alt="Sac 2" width="200" height="200">
+                        <p>Sac Bandoulière</p>
+                        <button class="add-to-cart" data-product-id="10">Ajouter au Panier</button>
+                    </div>
+                </div>
+            </div>
+            <div class="product-category">
+                <h3>Écharpes</h3>
+                <div class="product-grid">
+                    <div class="product">
+                        <img src="https://via.placeholder.com/200" alt="Écharpe 1" width="200" height="200">
+                        <p>Écharpe en Laine</p>
+                        <button class="add-to-cart" data-product-id="11">Ajouter au Panier</button>
+                    </div>
+                    <div class="product">
+                        <img src="https://via.placeholder.com/200" alt="Écharpe 2" width="200" height="200">
+                        <p>Écharpe en Soie</p>
+                        <button class="add-to-cart" data-product-id="12">Ajouter au Panier</button>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section id="promotions">
-            <div class="container">
-                <h2>Promotions</h2>
-                <div class="product">
-                    <h3>Promotion spéciale</h3>
-                    <img src="">
-                    <p>Description de la promotion spéciale.</p>
-                    <p>Prix réduit : 14,99 €</p>
+        <section id="jewelry">
+            <h2>Bijoux</h2>
+            <div class="product-category">
+                <h3>Colliers</h3>
+                <div class="product-grid">
+                    <div class="product">
+                        <img src="https://via.placeholder.com/200" alt="Collier 1" width="200" height="200">
+                        <p>Collier en Or</p>
+                        <button class="add-to-cart" data-product-id="13">Ajouter au Panier</button>
+                    </div>
+                    <div class="product">
+                        <img src="https://via.placeholder.com/200" alt="Collier 2" width="200" height="200">
+                        <p>Collier en Argent</p>
+                        <button class="add-to-cart" data-product-id="14">Ajouter au Panier</button>
+                    </div>
                 </div>
             </div>
-        </section>
-
-        <section id="best-sellers">
-            <div class="container">
-                <h2>Meilleures ventes</h2>
-                <div class="product">
-                    <h3>Produit populaire 1</h3>
-                    <img src="">
-                    <p>Description du produit populaire 1.</p>
-                    <p>Prix : 27,99 €</p>
+            <div class="product-category">
+                <h3>Boucles d'oreilles</h3>
+                <div class="product-grid">
+                    <div class="product">
+                        <img src="https://via.placeholder.com/200" alt="Boucles d'oreilles 1" width="200" height="200">
+                        <p>Boucles d'oreilles en Or</p>
+                        <button class="add-to-cart" data-product-id="15">Ajouter au Panier</button>
+                    </div>
+                    <div class="product">
+                        <img src="https://via.placeholder.com/200" alt="Boucles d'oreilles 2" width="200" height="200">
+                        <p>Boucles d'oreilles en Argent</p>
+                        <button class="add-to-cart" data-product-id="16">Ajouter au Panier</button>
+                    </div>
                 </div>
-                <div class="product">
-                    <h3>Produit populaire 2</h3>
-                    <img src="">
-                    <p>Description du produit populaire 2.</p>
-                    <p>Prix : 22,99 €</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="about-us">
-            <div class="container">
-                <h2>À propos de nous</h2>
-                <p>Bienvenue sur notre site e-commerce où vous trouverez une large sélection de produits de qualité.</p>
-                <p>Nous nous engageons à vous offrir une expérience d'achat exceptionnelle.</p>
             </div>
         </section>
     </main>
 
     <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="social-icons">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <!-- Ajoutez d'autres icônes de réseaux sociaux si nécessaire -->
-                </div>
-                <p>&copy; 2024 Mon Site E-commerce. Tous droits réservés.</p>
-            </div>
+        <p>&copy; 2024 FaNa'Zine</p>
+        <div class="social-media">
+            <a href="https://www.instagram.com/fana_zine/" target="_blank">
+                <i class="fab fa-instagram" style="font-size: 30px; color: #000;"></i>
+            </a>
         </div>
     </footer>
+
+    <script src="js/app.js"></script>
 </body>
 </html>
