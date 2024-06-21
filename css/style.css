@@ -15,12 +15,6 @@
     margin-right: 8px;
 }
 
-/* Désactiver l'effet de survol */
-.nav-item .nav-link:hover {
-    background-color: transparent; /* Fond transparent */
-    transition: none; /* Aucune transition */
-}
-
 @media (max-width: 992px) {
     .navbar-nav {
         text-align: center;
@@ -41,12 +35,5 @@
         justify-content: center;
         padding: 10px; /* Ajoute de l'espace pour rendre les éléments plus cliquables */
         font-size: 1.3rem; /* Augmente la taille de la police */
-    }
-    /* Désactiver l'effet de survol */
-    .navbar-nav .nav-link:hover {
-        background-color: transparent; /* Fond transparent */
-    }
-    .navbar-nav .dropdown:hover .dropdown-menu {
-        display: none;
     }
 }
