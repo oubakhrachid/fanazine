@@ -1,18 +1,35 @@
-/* style.css */
-
-/* Styles généraux */
-.dropdown-menu-custom {
-    min-width: 200px;
+body {
+    font-family: Arial, sans-serif;
 }
 
-.nav-item .nav-link {
+.navbar-nav .nav-item .nav-link {
     display: flex;
     align-items: center;
-    font-size: 1.1rem; /* Augmenter la taille de la police */
+    font-size: 1.1rem;
 }
 
-.nav-item .nav-link i {
+.navbar-nav .nav-item .nav-link i {
     margin-right: 8px;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+    transition: background-color 0.3s ease;
+}
+
+.navbar-toggler,
+.nav-link i.fa-shopping-cart,
+.nav-link i.fa-sign-in-alt {
+    color: #000; /* Change this color to match the desired color */
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler:focus {
+    outline: none;
+    box-shadow: none;
 }
 
 @media (max-width: 992px) {
@@ -20,20 +37,83 @@
         text-align: center;
         width: 100%;
     }
+
     .navbar-nav .dropdown-menu {
         position: static;
         float: none;
         text-align: center;
-        pointer-events: none; /* Empêche l'ouverture inattendue du dropdown */
     }
+
     .navbar-nav .nav-item {
         width: 100%;
     }
+
     .navbar-nav .nav-link {
         width: 100%;
         display: flex;
         justify-content: center;
-        padding: 10px; /* Ajoute de l'espace pour rendre les éléments plus cliquables */
-        font-size: 1.3rem; /* Augmente la taille de la police */
+        padding: 10px;
+        font-size: 1.3rem;
     }
+
+    .navbar-nav .nav-link:hover {
+        background-color: rgba(255, 255, 255, 0.8);
+    }
+}
+
+.card {
+    transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card .card-img-top {
+    height: 300px;
+    object-fit: cover;
+}
+
+.hero {
+    padding: 50px 0;
+    text-align: center;
+    background-color: #f8f9fa;
+}
+
+.hero h1 {
+    font-size: 3rem;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    color: #6c757d;
+}
+
+.products {
+    padding: 50px 0;
+}
+
+.products .card {
+    margin-bottom: 30px;
+}
+
+.products .card h5 {
+    font-size: 1.25rem;
+}
+
+.products .card p {
+    font-size: 1rem;
+    color: #6c757d;
+}
+
+footer {
+    background-color: #343a40;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer a {
+    color: #fff;
+    margin-left: 8px;
 }
