@@ -1,138 +1,50 @@
-/* General Styles */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f9f9f9;
+.dropdown-menu-custom {
+    min-width: 200px;
 }
-
-header {
-    background-color: #fff;
-    padding: 10px 0;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-}
-
-nav ul li {
-    margin: 0 15px;
-    position: relative;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
+.nav-item .nav-link {
     display: flex;
     align-items: center;
+    font-size: 1.1rem; /* Augmenter la taille de la police */
 }
-
-nav ul li a i {
-    margin-right: 5px;
+.nav-item .nav-link i {
+    margin-right: 8px;
 }
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #fff;
-    min-width: 160px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-    z-index: 1;
+.nav-item .nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.8); /* Fond blanc fluide au survol */
+    transition: background-color 0.3s ease;
 }
-
-.dropdown-content a {
-    color: #333;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-}
-
-.dropdown-content a:hover {
-    background-color: #f1f1f1;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-main {
-    padding: 20px;
-}
-
-.product-category {
-    margin-bottom: 40px;
-}
-
-.product-grid {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.product {
-    margin: 10px;
-    text-align: center;
-    background-color: #fff;
-    padding: 15px;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.product:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
-}
-
-.product img {
-    border: 1px solid #ddd;
-    padding: 10px;
-    background-color: #fff;
-    border-radius: 10px;
-}
-
-.product p {
-    margin: 10px 0;
-}
-
-button.add-to-cart {
-    background-color: #007bff;
-    color: #fff;
+.navbar-toggler {
     border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: background-color 0.3s, transform 0.3s;
 }
-
-button.add-to-cart:hover {
-    background-color: #0056b3;
-    transform: scale(1.05);
+.navbar-toggler:focus {
+    outline: none;
+    box-shadow: none;
 }
-
-footer {
-    background-color: #fff;
-    text-align: center;
-    padding: 10px 0;
-    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-}
-
-.social-media {
-    margin-top: 10px;
-}
-
-.social-media a {
-    margin: 0 5px;
-    text-decoration: none;
+@media (max-width: 992px) {
+    .navbar-nav {
+        text-align: center;
+        width: 100%;
+    }
+    .navbar-nav .dropdown-menu {
+        position: static;
+        float: none;
+        text-align: center;
+        pointer-events: none; /* Empêche l'ouverture inattendue du dropdown */
+    }
+    .navbar-nav .nav-item {
+        width: 100%;
+    }
+    .navbar-nav .nav-link {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 10px; /* Ajoute de l'espace pour rendre les éléments plus cliquables */
+        font-size: 1.3rem; /* Augmente la taille de la police */
+    }
+    .navbar-nav .dropdown:hover .dropdown-menu {
+        display: none;
+    }
+    .navbar-nav .nav-link:hover {
+        background-color: rgba(255, 255, 255, 0.8); /* Fond blanc fluide au survol */
+    }
 }

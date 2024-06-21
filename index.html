@@ -3,180 +3,132 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FaNa'Zine - Vêtements et Accessoires pour Femmes</title>
+    <title>FaNa'Zine - E-commerce de Mode Islamique</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.11.0/mdb.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" href="https://example.com/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Font Awesome -->
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="#home"><i class="fas fa-home"></i> Accueil</a></li>
-                <li class="dropdown">
-                    <a href="#clothing"><i class="fas fa-tshirt"></i> Vêtements</a>
-                    <div class="dropdown-content">
-                        <a href="#robes-longues">Robes Longues</a>
-                        <a href="#abayas">Abayas</a>
-                        <a href="#jilbebs">Jilbebs</a>
-                        <a href="#voiles">Voiles</a>
-                    </div>
-                </li>
-                <li><a href="#accessories"><i class="fas fa-hat-cowboy"></i> Accessoires</a></li>
-                <li><a href="#jewelry"><i class="fas fa-gem"></i> Bijoux</a></li>
-                <li><a href="#cart"><i class="fas fa-shopping-cart"></i> Panier</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="#">FaNa'Zine</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                    <ul class="navbar-nav text-center">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">
+                                <i class="fas fa-home"></i> Accueil
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownCategories" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fas fa-female"></i> Vêtements
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-custom text-center" aria-labelledby="navbarDropdownCategories">
+                                <li><a class="dropdown-item" href="#"><i class="fas fa-tshirt"></i> Abayas</a></li>
+                                <li><a class="dropdown-item" href="#"><i class="fas fa-tshirt"></i> Jilbebs</a></li>
+                                <li><a class="dropdown-item" href="#"><i class="fas fa-tshirt"></i> Voiles</a></li>
+                                <li><a class="dropdown-item" href="#"><i class="fas fa-tshirt"></i> Robes Longues</a></li>
+                                <li><a class="dropdown-item" href="#"><i class="fas fa-tshirt"></i> Tuniques</a></li>
+                                <li><a class="dropdown-item" href="#"><i class="fas fa-tshirt"></i> Sarouels</a></li>
+                                <li><a class="dropdown-item" href="#"><i class="fas fa-tshirt"></i> Chemises</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownAccessories" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fas fa-gem"></i> Accessoires
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-custom text-center" aria-labelledby="navbarDropdownAccessories">
+                                <li><a class="dropdown-item" href="#"><i class="fas fa-ring"></i> Bijoux</a></li>
+                                <li><a class="dropdown-item" href="#"><i class="fas fa-scarf"></i> Foulards</a></li>
+                                <li><a class="dropdown-item" href="#"><i class="fas fa-belt"></i> Ceintures</a></li>
+                                <li><a class="dropdown-item" href="#"><i class="fas fa-shoe-prints"></i> Chaussures</a></li>
+                                <li><a class="dropdown-item" href="#"><i class="fas fa-handbag"></i> Sacs à main</a></li>
+                                <li><a class="dropdown-item" href="#"><i class="fas fa-spray-can"></i> Parfums</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="fas fa-info-circle"></i> À Propos
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="fas fa-envelope"></i> Contact
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="fas fa-sign-in-alt"></i> Connexion
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="fas fa-user-plus"></i> Inscription
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="fas fa-shopping-cart"></i> Panier
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
-
     <main>
-        <section id="home">
-            <h1>Bienvenue sur FaNa'Zine</h1>
-            <p>Découvrez notre sélection de vêtements, accessoires, bijoux et plus encore pour femmes.</p>
-        </section>
-
-        <section id="clothing">
-            <h2>Vêtements</h2>
-            <div class="product-category" id="robes-longues">
-                <h3>Robes Longues</h3>
-                <div class="product-grid">
-                    <div class="product">
-                        <img src="https://via.placeholder.com/200" alt="Robe Longue 1" width="200" height="200">
-                        <p>Robe Longue Élégante</p>
-                        <button class="add-to-cart" data-product-id="1">Ajouter au Panier</button>
-                    </div>
-                    <div class="product">
-                        <img src="https://via.placeholder.com/200" alt="Robe Longue 2" width="200" height="200">
-                        <p>Robe Longue Simple</p>
-                        <button class="add-to-cart" data-product-id="2">Ajouter au Panier</button>
-                    </div>
-                </div>
-            </div>
-            <div class="product-category" id="abayas">
-                <h3>Abayas</h3>
-                <div class="product-grid">
-                    <div class="product">
-                        <img src="https://via.placeholder.com/200" alt="Abaya 1" width="200" height="200">
-                        <p>Abaya Classique</p>
-                        <button class="add-to-cart" data-product-id="3">Ajouter au Panier</button>
-                    </div>
-                    <div class="product">
-                        <img src="https://via.placeholder.com/200" alt="Abaya 2" width="200" height="200">
-                        <p>Abaya Moderne</p>
-                        <button class="add-to-cart" data-product-id="4">Ajouter au Panier</button>
-                    </div>
-                </div>
-            </div>
-            <div class="product-category" id="jilbebs">
-                <h3>Jilbebs</h3>
-                <div class="product-grid">
-                    <div class="product">
-                        <img src="https://via.placeholder.com/200" alt="Jilbeb 1" width="200" height="200">
-                        <p>Jilbeb Traditionnel</p>
-                        <button class="add-to-cart" data-product-id="5">Ajouter au Panier</button>
-                    </div>
-                    <div class="product">
-                        <img src="https://via.placeholder.com/200" alt="Jilbeb 2" width="200" height="200">
-                        <p>Jilbeb Contemporain</p>
-                        <button class="add-to-cart" data-product-id="6">Ajouter au Panier</button>
-                    </div>
-                </div>
-            </div>
-            <div class="product-category" id="voiles">
-                <h3>Voiles</h3>
-                <div class="product-grid">
-                    <div class="product">
-                        <img src="https://via.placeholder.com/200" alt="Voile 1" width="200" height="200">
-                        <p>Voile Élégant</p>
-                        <button class="add-to-cart" data-product-id="7">Ajouter au Panier</button>
-                    </div>
-                    <div class="product">
-                        <img src="https://via.placeholder.com/200" alt="Voile 2" width="200" height="200">
-                        <p>Voile Simple</p>
-                        <button class="add-to-cart" data-product-id="8">Ajouter au Panier</button>
-                    </div>
-                </div>
+        <section class="hero">
+            <div class="container">
+                <h1>Bienvenue sur FaNa'Zine</h1>
+                <p>Découvrez notre collection de vêtements et accessoires islamiques</p>
             </div>
         </section>
-
-        <section id="accessories">
-            <h2>Accessoires</h2>
-            <div class="product-category">
-                <h3>Sacs</h3>
-                <div class="product-grid">
-                    <div class="product">
-                        <img src="https://via.placeholder.com/200" alt="Sac 1" width="200" height="200">
-                        <p>Sac à Main</p>
-                        <button class="add-to-cart" data-product-id="9">Ajouter au Panier</button>
+        <section class="products">
+            <div class="container">
+                <h2 class="text-center">Produits en vedette</h2>
+                <div class="row row-cols-1 row-cols-md-3 g-4 product-list">
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="https://via.placeholder.com/300x400" class="card-img-top" alt="Produit 1">
+                            <div class="card-body">
+                                <h5 class="card-title">Produit 1</h5>
+                                <p class="card-text">Description du produit 1.</p>
+                                <a href="#" class="btn btn-primary">Acheter</a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="product">
-                        <img src="https://via.placeholder.com/200" alt="Sac 2" width="200" height="200">
-                        <p>Sac Bandoulière</p>
-                        <button class="add-to-cart" data-product-id="10">Ajouter au Panier</button>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="https://via.placeholder.com/300x400" class="card-img-top" alt="Produit 2">
+                            <div class="card-body">
+                                <h5 class="card-title">Produit 2</h5>
+                                <p class="card-text">Description du produit 2.</p>
+                                <a href="#" class="btn btn-primary">Acheter</a>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="product-category">
-                <h3>Écharpes</h3>
-                <div class="product-grid">
-                    <div class="product">
-                        <img src="https://via.placeholder.com/200" alt="Écharpe 1" width="200" height="200">
-                        <p>Écharpe en Laine</p>
-                        <button class="add-to-cart" data-product-id="11">Ajouter au Panier</button>
-                    </div>
-                    <div class="product">
-                        <img src="https://via.placeholder.com/200" alt="Écharpe 2" width="200" height="200">
-                        <p>Écharpe en Soie</p>
-                        <button class="add-to-cart" data-product-id="12">Ajouter au Panier</button>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="jewelry">
-            <h2>Bijoux</h2>
-            <div class="product-category">
-                <h3>Colliers</h3>
-                <div class="product-grid">
-                    <div class="product">
-                        <img src="https://via.placeholder.com/200" alt="Collier 1" width="200" height="200">
-                        <p>Collier en Or</p>
-                        <button class="add-to-cart" data-product-id="13">Ajouter au Panier</button>
-                    </div>
-                    <div class="product">
-                        <img src="https://via.placeholder.com/200" alt="Collier 2" width="200" height="200">
-                        <p>Collier en Argent</p>
-                        <button class="add-to-cart" data-product-id="14">Ajouter au Panier</button>
-                    </div>
-                </div>
-            </div>
-            <div class="product-category">
-                <h3>Boucles d'oreilles</h3>
-                <div class="product-grid">
-                    <div class="product">
-                        <img src="https://via.placeholder.com/200" alt="Boucles d'oreilles 1" width="200" height="200">
-                        <p>Boucles d'oreilles en Or</p>
-                        <button class="add-to-cart" data-product-id="15">Ajouter au Panier</button>
-                    </div>
-                    <div class="product">
-                        <img src="https://via.placeholder.com/200" alt="Boucles d'oreilles 2" width="200" height="200">
-                        <p>Boucles d'oreilles en Argent</p>
-                        <button class="add-to-cart" data-product-id="16">Ajouter au Panier</button>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="https://via.placeholder.com/300x400" class="card-img-top" alt="Produit 3">
+                            <div class="card-body">
+                                <h5 class="card-title">Produit 3</h5>
+                                <p class="card-text">Description du produit 3.</p>
+                                <a href="#" class="btn btn-primary">Acheter</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
     </main>
-
-    <footer>
-        <p>&copy; 2024 FaNa'Zine</p>
-        <div class="social-media">
-            <a href="https://www.instagram.com/fana_zine/" target="_blank">
-                <i class="fab fa-instagram" style="font-size: 30px; color: #000;"></i>
-            </a>
-        </div>
+    <footer class="text-center bg-dark text-white py-4">
+        <p>&copy; 2024 FaNa'Zine. Tous droits réservés.</p>
     </footer>
-
-    <script src="js/app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.11.0/mdb.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
