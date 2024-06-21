@@ -1,25 +1,26 @@
+/* style.css */
+
+/* Styles généraux */
 .dropdown-menu-custom {
     min-width: 200px;
 }
+
 .nav-item .nav-link {
     display: flex;
     align-items: center;
     font-size: 1.1rem; /* Augmenter la taille de la police */
 }
+
 .nav-item .nav-link i {
     margin-right: 8px;
 }
+
+/* Désactiver l'effet de survol */
 .nav-item .nav-link:hover {
-    background-color: rgba(255, 255, 255, 0.8); /* Fond blanc fluide au survol */
-    transition: background-color 0.3s ease;
+    background-color: transparent; /* Fond transparent */
+    transition: none; /* Aucune transition */
 }
-.navbar-toggler {
-    border: none;
-}
-.navbar-toggler:focus {
-    outline: none;
-    box-shadow: none;
-}
+
 @media (max-width: 992px) {
     .navbar-nav {
         text-align: center;
@@ -41,10 +42,11 @@
         padding: 10px; /* Ajoute de l'espace pour rendre les éléments plus cliquables */
         font-size: 1.3rem; /* Augmente la taille de la police */
     }
+    /* Désactiver l'effet de survol */
+    .navbar-nav .nav-link:hover {
+        background-color: transparent; /* Fond transparent */
+    }
     .navbar-nav .dropdown:hover .dropdown-menu {
         display: none;
-    }
-    .navbar-nav .nav-link:hover {
-        background-color: rgba(255, 255, 255, 0.8); /* Fond blanc fluide au survol */
     }
 }
